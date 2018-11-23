@@ -1,0 +1,31 @@
+<html>
+<head>
+<script language="Javascript">
+function hideA()
+{
+
+    document.getElementById("A").style.visibility="hidden";
+    document.getElementById("B").style.visibility="visible";    
+
+}
+
+function hideB()
+{
+    document.getElementById("B").style.visibility="hidden";
+    document.getElementById("A").style.visibility="visible";
+
+}
+</script>
+</head>
+<body>Show : 
+<input type="radio"  name="aorb" onClick="hideB()" checked>A | 
+<input type="radio"  name="aorb" onClick="hideA()">B
+<form id="A">
+	<div style="position: absolute; left: 10px; top: 100px;"><br/>A's text</div>
+</form>
+
+<form id="B">
+	<div style="position: absolute; left: 10px; top: 100px; " ><br/>B's text</div>
+</form>
+</body>
+</html>
